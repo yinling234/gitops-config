@@ -4,9 +4,9 @@ namespace: staging
 resources:
   - ../../base
 patches:
-  - deployment-patch.yaml
-  - ingress-patch.yaml
-  - hpa-patch.yaml
+  - path: deployment-patch.yaml
+  - path: ingress-patch.yaml
+  - path: hpa-patch.yaml
 images:
   - name: 192.168.30.11:30002/library/myapp
     newTag: v1.0.0
